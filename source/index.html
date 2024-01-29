@@ -5,9 +5,9 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <body class="page__content root">
+  <body class="page__body">
 
-    <header class="site-header root__header">
+    <header class="page__header site-header">
       <a class="site-header__logo logotype" href="#" title="Перейти на Главную страницу.">
         <img class="logotype__image" src="" alt="Логотип: кот в костюме супергероя.">
         <img class="logotype__text" src="" alt="CAT ENERGY.">
@@ -20,25 +20,76 @@
 
         <ul class="site-menu__list links-list">
           <li class="links-list__item">
-            <a  class="links-list__link links-list__link--current" href="">
+            <a  class="links-list__link links-list__link--current" href="#">
               Главная
             </a>
           </li>
 
           <li class="links-list__item">
-            <a  class="links-list__link" href="">
+            <a  class="links-list__link" href="#">
               Каталог продукции
             </a>
           </li>
 
           <li class="links-list__item">
-            <a  class="links-list__link" href="">
+            <a  class="links-list__link" href="#">
               Программы
             </a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <main class="page__main-part content">
+      <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
+
+      <article class="content__promo-banner food-program">
+        <div class="food-program__wrapper">
+          <h2 class="food-program__title">Функциональное питание для котов</h2>
+          <p class="food-program__text">Занялся собой? Займись котом!</p>
+
+          <img class="food-program__image" src="" alt="Банка корма Cat Energy Pro со вкусом курицы.">
+
+          <a class="food-program__link" href="#">
+            Подобрать программу
+          </a>
+        </div>
+
+        <div class="food-program__background food-program__background--position"></div>
+      </article>
+
+      <section class="content__catalog-choice catalog-type">
+        <h2 class="visually-hidden">Кормите кота правильно</h2>
+
+        <div class="catalog-type__description food-strategy">
+          <h3 class="food-strategy__title food-strategy__title--slim-cat">Похудение</h3>
+          <p class="food-strategy__text">
+            Ваш кот весит больше собаки
+            и почти утратил способность лазить по деревьям?
+            Пора на диету! Cat Energy Slim
+            поможет вашему питомцу сбросить лишний вес.
+          </p>
+
+          <a class="catalog-type__link" href="#">
+            Каталог Slim
+          </a>
+        </div>
+
+        <div class="catalog-type__description food-strategy">
+          <h3 class="food-strategy__title food-strategy__title--big-cat">Набор массы</h3>
+          <p class="food-strategy__text">
+            Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro
+            поможет вашему коту нарастить необходимые мышцы!
+          </p>
+
+          <a class="catalog-type__link" href="#">
+            Каталог Pro
+          </a>
+        </div>
+      </section>
+
+    </main>
 
     <p class="">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
 
