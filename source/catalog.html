@@ -42,68 +42,73 @@
       </nav>
     </header>
 
-    <main class="page__main-part content">
-      <h2 class="section-title">Каталог продукции</h2>
+    <main class="page__main-content content">
+      <h2 class="page__title section-title">Каталог продукции</h2>
 
-      <section>
+      <section class="content__catalog catalog">
         <h3 class="visually-hidden">Основные товары</h3>
 
-        <ul class="">
-          <li class="">
-            <img class="" src="#" alt="Изображение упаковки корма Cat Energy.">
+        <ul class="catalog__products products">
+          <li class="products__card product">
+            <img class="product__image" src="#" alt="Изображение упаковки корма Cat Energy.">
 
-            <div class="">
-              <h4 class="">Cat Energy</h4>
+            <div class="product__info main-features">
+              <h4 class="main-features__title card-title">Cat Energy Pro 500 г</h4>
 
-              <table class="">
+              <table class="main-features__list">
                 <caption class="visually-hidden">Основные характеристики</caption>
 
-                <tr class="">
-                  <th class="">Масса</th>
-                  <td class=""></td>
+                <tr class="main-features__item info-row">
+                  <th class="info-row__title">Масса</th>
+                  <td class="info-row__price">500 г</td>
                 </tr>
 
-                <tr class="">
-                  <th class="">Вкус</th>
-                  <td class=""></td>
+                <tr class="main-features__item info-row">
+                  <th class="info-row__title">Вкус</th>
+                  <td class="info-row__price">Курица</td>
                 </tr>
 
-                <tr class="">
-                  <th class="">Цена</th>
-                  <td class="">&#8381;</td>
+                <tr class="main-features__item info-row">
+                  <th class="info-row__title">Цена</th>
+                  <td class="info-row__price">700 &#8381;</td>
                 </tr>
               </table>
             </div>
 
-            <button class="" type="button">Заказать</button>
+            <button class="product__order-button button" type="button">Заказать</button>
           </li>
         </ul>
 
-        <div>
-          <p>Показать еще 100500 товаров</p>
-          <p>На самом деле вкусов гораздо больше!</p>
-          <button class="" type="button">Показать все</button>
+        <div class="catalog__card-see-more card-see-more">
+          <p class="card-see-more__title">Показать еще 100500 товаров</p>
+          <p class="card-see-more__text">На самом деле вкусов гораздо больше!</p>
+          <button class="card-see-more__button button button--uncolored" type="button">Показать все</button>
         </div>
       </section>
 
-      <section>
-        <h3>Дополнительные товары</h3>
+      <section class="content__add-on-products add-on-products">
+        <h3 class="add-on-products__title section-title">Дополнительные товары</h3>
 
-        <ul class="">
-          <li class="">
-            <h4 class=""></h4>
+        <ul class="add-on-products__list short-cards">
+          <li class="short-cards__card">
+            <h4 class="short-cards__title card-title">Сахарозаменитель</h4>
 
-            <p class="">
-              <span class="">&#8381;</span>
-            </p>
+            <dl class="short-cards__info-row info-row">
+              <dt class="info-row__title">1 упаковка (100 г)</dt>
+              <dd class="info-row__price">200 &#8381;</dd>
+            </dl>
 
-            <button class="" type="button">Заказать</button>
+            <button class="short-cards__order-button button" type="button">Заказать</button>
           </li>
         </ul>
       </section>
 
-      <section>
-
+      <section class="content__event-promo event-promo">
+        <p class="event-promo__text promo-paragraph">
+          Закажите все
+          и получите чехол для
+          кота в подарок!
+        </p>
       </section>
     </main>
 
