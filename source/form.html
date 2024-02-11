@@ -58,21 +58,21 @@
             <li class="inputs__item">
               <label class="">
                 <span class="inputs__name">Имя:*</span>
-                <input class="inputs__input" type="text" placeholder="Барсик" value="" required>
+                <input class="inputs__input" type="text" name="cats-name" placeholder="Барсик" required>
               </label>
             </li>
 
             <li class="inputs__item">
               <label class="">
                 <span class="inputs__name">Вес (кг):*</span>
-                <input class="inputs__input" type="number" min="1" placeholder="7" value="" required>
+                <input class="inputs__input" type="number" name="cats-weight" min="1" placeholder="7" required>
               </label>
             </li>
 
             <li class="inputs__item">
               <label class="">
                 <span class="inputs__name">Возраст (лет):</span>
-                <input class="inputs__input" type="number" min="1" max="30" placeholder="7" value="">
+                <input class="inputs__input" type="number" name="cats-age" min="1" max="30" placeholder="7">
               </label>
             </li>
           </ul>
@@ -84,7 +84,7 @@
           <ul class="fields-group__choice choice">
             <li class="choice__item">
               <label class="">
-                <input class="visually-hidden" type="radio" name="weight-loss" value="" checked>
+                <input class="visually-hidden" type="radio" name="program-goal" value="weight-loss" checked>
                 <span class="choice__mark choice__radio"></span>
                 <span class="choice__name">Похудение</span>
               </label>
@@ -92,7 +92,7 @@
 
             <li class="choice__item">
               <label class="">
-                <input class="visually-hidden" type="radio" name="weight-gain" value="">
+                <input class="visually-hidden" type="radio" name="program-goal" value="weight-gain">
                 <span class="choice__mark choice__radio"></span>
                 <span class="choice__name">Набор массы</span>
               </label>
@@ -100,7 +100,7 @@
 
             <li class="choice__item">
               <label class="">
-                <input class="visually-hidden" type="radio" name="dont-know" value="">
+                <input class="visually-hidden" type="radio" name="program-goal" value="dont-know">
                 <span class="choice__mark choice__radio"></span>
                 <span class="choice__name">Не знаю (нужен ваш совет)</span>
               </label>
@@ -115,14 +115,14 @@
             <li class="inputs__item">
               <label class="">
                 <span class="inputs__name">E-mail:*</span>
-                <input class="inputs__input" type="email" placeholder="kuklachev@gmail.com" value="" required>
+                <input class="inputs__input" type="email" placeholder="" name="e-mail" value="kuklachev@gmail.com" required>
               </label>
             </li>
 
             <li class="">
               <label class="">
                 <span class="inputs__name">Телефон:*</span>
-                <input class="inputs__input" type="tel" placeholder="8 (960) 900-60-90" value="" required>
+                <input class="inputs__input" type="tel" placeholder="" name="phone" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
@@ -140,7 +140,7 @@
           <ul class="fields-group__choice choice">
             <li class="choice__item">
               <label class="">
-                <input class="visually-hidden" type="checkbox" name="sugar-substitute" value="" checked>
+                <input class="visually-hidden" type="checkbox" name="related-products" value="sugar-substitute" checked>
                 <span class="choice__mark choice__checkbox"></span>
                 <span class="choice__name">Сахарозаменитель</span>
               </label>
@@ -148,7 +148,7 @@
 
             <li class="">
               <label class="">
-                <input class="visually-hidden" type="checkbox" name="water" value="">
+                <input class="visually-hidden" type="checkbox" name="related-products" value="water">
                 <span class="choice__mark choice__checkbox"></span>
                 <span class="choice__name">Питьевая вода</span>
               </label>
@@ -156,7 +156,7 @@
 
             <li class="">
               <label class="">
-                <input class="visually-hidden" type="checkbox" name="milk" value="">
+                <input class="visually-hidden" type="checkbox" name="related-products" value="milk">
                 <span class="choice__mark choice__checkbox"></span>
                 <span class="choice__name">Молоко</span>
               </label>
@@ -164,7 +164,7 @@
 
             <li class="">
               <label class="">
-                <input class="visually-hidden" type="checkbox" name="vitamins" value="">
+                <input class="visually-hidden" type="checkbox" name="related-products" value="vitamins">
                 <span class="choice__mark choice__checkbox"></span>
                 <span class="choice__name">Витамины</span>
               </label>
