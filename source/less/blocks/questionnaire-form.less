@@ -1,15 +1,51 @@
+.questionnaire-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionnaire-form__title {
+  margin-bottom: 1.03em;
+
+  padding-top: 27px;
+  padding-left: 20px;
+}
+
 .questionnaire-form__call-to-action {
+  width: 75%;
+  padding-left: 20px;
+  margin: 0 0 38px;
+
   font-size: 0.87em;
   line-height: 1.3em;
 }
 
+.questionnaire-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--with-bottom-border {
+    border-bottom: 1px solid @line-header-grey;
+  }
+}
+
 .questionnaire-form__disclaimer {
+  align-self: center;
+
   .font-lato-regular(0.87em);
   line-height: 1em;
   text-transform: none;
 }
 
 .questionnaire-form__button {
+  width: calc(100% - 40px);
+  display: block;
+
+  margin-top: 15px;
+  margin-bottom: 23px;
+  padding: 8px;
+  align-self: center;
+
   .font-oswald-regular();
   text-transform: uppercase;
 
