@@ -1,0 +1,27 @@
+.inputs__row {
+  display: flex;
+  align-items: baseline;
+}
+
+.inputs__name {
+  margin-right: 14px;
+
+  color: @special-dark-grey;
+}
+
+.inputs__input {
+  padding: 13px 15px 12px;
+  margin-bottom: 14px;
+  flex-grow: 1;
+
+  .font-oswald();
+  line-height: 18px;
+  color: @special-dark-grey;
+  text-transform: uppercase;
+
+  border: 1px solid @border-input-grey;
+
+  &::placeholder {
+    color: @special-dark-grey;
+  }
+}

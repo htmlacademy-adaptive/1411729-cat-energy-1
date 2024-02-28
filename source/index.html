@@ -2,17 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <body class="page__body ">
+  <body class="page__body">
 
-    <header class="page__header site-header">
+    <header class="page__header page__header--index-style site-header">
       <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
 
       <a class="site-header__logo logotype" href="index.html" title="Перейти на Главную страницу">
-        <img src="img/logo-catenergy-image.svg" alt="Логотип: кот в костюме супергероя.">
-        <img src="img/logo-catenergy-text.svg" alt="CAT ENERGY.">
+        <img class="logotype__image" src="img/logo-catenergy-mobile.svg" width="33" height="38" alt="Логотип: кот в костюме супергероя.">
+        <img class="logotype__text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
 
       <nav class="site-header__navigation site-menu">
@@ -35,7 +36,7 @@
 
           <li class="menu-links__item">
             <a  class="menu-links__link" href="form.html">
-              Программы
+              Подбор программы
             </a>
           </li>
         </ul>
@@ -45,7 +46,7 @@
     <main class="page__main-content content">
       <article class="content__promo-banner food-program">
         <div class="food-program__wrapper">
-          <h2 class="food-program__title">Функциональное питание для котов</h2>
+          <h2 class="food-program__title content__title">Функциональное питание для котов</h2>
           <p class="food-program__text">Занялся собой? Займись котом!</p>
 
           <img class="food-program__image" src="img/promo-cat-food--mobile.png" alt="Банка корма Cat Energy Pro со вкусом курицы.">
@@ -176,7 +177,7 @@
         <h2 class="visually-hidden">Адрес магазина</h2>
 
         <p class="information__call-to-action">
-          Приглашаем
+          Приглашаем<br>
           к сотрудничеству
           дилеров!
         </p>
@@ -190,30 +191,31 @@
 
       <section class="site-footer__map">
         <h2 class="visually-hidden">Карта с отмеченным местом расположения магазина</h2>
+        <img src="img/stub-map-mobile.jpg" width="320" height="360">
       </section>
 
       <section class="site-footer__links footer-links">
         <h2 class="visually-hidden">Ссылки магазина</h2>
 
         <a class="footer-links__logotype" href="index.html" title="Перейти на Главную страницу">
-          <img class="" src="img/logo-catenergy-text.svg" alt="CAT ENERGY.">
+          <img class="" src="img/logo-catenergy-text.svg" width="128" height="24" alt="CAT ENERGY.">
         </a>
 
         <ul class="footer-links__list social-links">
           <li class="social-links__item">
-            <a class="icon-vk" href="#" title="Наша группа в VK">
+            <a class="social-icon--vk" href="#" title="Наша группа в VK">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
 
           <li class="social-links__item">
-            <a class="icon-youtube" href="#" title="Наш канал на YouTube">
+            <a class="social-icon--youtube" href="#" title="Наш канал на YouTube">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
 
           <li class="social-links__item">
-            <a class="icon-telegram" href="#" title="Наш телеграм канал">
+            <a class="social-icon--telegram" href="#" title="Наш телеграм канал">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
