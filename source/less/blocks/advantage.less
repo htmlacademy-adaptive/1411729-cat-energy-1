@@ -1,7 +1,7 @@
 .advantage__description {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 0;
 
   font-size: 14px;
   line-height: 18px;
@@ -16,5 +16,27 @@
     margin-right: 20px;
 
     background-color: @green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__description {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
+
+      width: 136px;
+      height: 280px;
+
+      background-color: @basic-grey;
+    }
   }
 }

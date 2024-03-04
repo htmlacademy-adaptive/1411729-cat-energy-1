@@ -13,3 +13,18 @@
   list-style: none;
   border-top: 1px solid @line-menu-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .site-menu__button {
+    .visually-hidden;
+  }
+
+  .site-menu__list {
+    visibility: visible;
+    position: relative;
+    top: unset;
+
+    display: flex;
+    border: 0;
+  }
+}

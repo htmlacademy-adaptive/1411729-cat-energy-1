@@ -28,8 +28,17 @@
 }
 
 .food-strategy__text {
+  margin-top: 0;
   margin-bottom: 20px;
 
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .food-strategy__title {
+    &::before {
+      display: none;
+    }
+  }
 }

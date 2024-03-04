@@ -1,6 +1,7 @@
 .information {
   padding: 27px 15px 24px 20px;
   display: flex;
+  justify-content: space-between;
 
   &--white-background {
     background-color: @white;
@@ -8,8 +9,8 @@
 }
 
 .information__call-to-action {
+  width: 140px;
   margin: 0;
-  margin-right: 15px;
 
   .font-oswald();
   line-height: 20px;
@@ -18,9 +19,16 @@
 }
 
 .information__address {
+  width: 140px;
+
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
   color: @special-dark-grey;
+}
 
-  font-style: normal;
+@media (min-width: @tablet-width) {
+  .information__address {
+    text-align: right;
+  }
 }

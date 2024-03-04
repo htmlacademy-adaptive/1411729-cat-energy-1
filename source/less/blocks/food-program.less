@@ -40,3 +40,28 @@
   background-color: @green;
   color: @white;
 }
+
+@media (min-width: @tablet-width) {
+  .food-program__wrapper {
+    position: relative;
+    justify-items: start;
+  }
+
+  .food-program__title {
+    text-align: initial;
+  }
+
+  .food-program__image {
+    justify-self: end;
+  }
+
+  .food-program__link {
+    width: unset;
+    padding-right: 26px;
+    padding-left: 26px;
+
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  }
+}
