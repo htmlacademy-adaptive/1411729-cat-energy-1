@@ -8,7 +8,20 @@
 
 .add-on-products__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .add-on-products__title {
+    padding: 24px 30px 0;
+
+    font-size: 36px;
+    border-top: none;
+  }
+
+  .add-on-products__list {
+    padding: 0 30px;
+  }
 }

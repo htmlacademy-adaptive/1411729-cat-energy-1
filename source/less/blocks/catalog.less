@@ -1,13 +1,30 @@
 .catalog__products {
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
 
   list-style: none;
 }
 
 .catalog__card-see-more {
-  margin-bottom: 24px;
   padding: 0 20px;
 
   border-top: 1px solid @line-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__products {
+    padding: 0 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+  }
+
+  .catalog__card-see-more {
+    padding: 40px 37px;
+
+    border: 1px solid @line-grey;
+  }
 }

@@ -9,3 +9,18 @@
 
   border-top: 1px solid @line-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .products__card {
+    padding: 40px 37px;
+
+    justify-items: center;
+    grid-template-areas:
+      "image image"
+      "info info"
+      "button button";
+
+    border: none;
+    background-color: @basic-grey;
+  }
+}

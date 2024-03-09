@@ -1,6 +1,5 @@
 .short-cards__title {
   margin: 0 0 9px;
-  padding-top: 11px;
 
   .font-oswald();
   line-height: 20px;
@@ -8,12 +7,11 @@
 
   text-transform: uppercase;
   text-decoration: none;
-  border-top: 1px solid @line-grey;
 }
 
 .short-cards__card {
-  padding: 0 20px;
-  margin-bottom: 18px;
+  padding-top: 11px;
+  border-top: 1px solid @line-grey;
 }
 
 .short-cards__info-row {
@@ -22,10 +20,32 @@
 
 .short-cards__order-link {
   padding: 10px;
+  margin-bottom: 18px;
 
   .font-oswald();
   line-height: 20px;
 
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .short-cards__card {
+    padding: 26px 38px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border: 1px solid @line-grey;
+    border-top: none;
+
+    &:first-child {
+      border-top: 1px solid @line-grey;
+    }
+  }
+
+  .short-cards__order-link {
+    margin-bottom: 28px;
+    grid-column: 1 / -1;
+  }
 }
