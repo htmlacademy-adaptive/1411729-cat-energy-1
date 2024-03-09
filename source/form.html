@@ -49,11 +49,11 @@
         <h2 class="questionnaire-form__title content__title">Подбор программы</h2>
 
         <p class="questionnaire-form__call-to-action">
-          Заполните анкету, и мы подберем программу
-          питания для вашего кота
+          Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота
         </p>
 
-        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--with-bottom-border fields-group">
+        <fieldset class="questionnaire-form__fieldset fields-group">
           <legend class="visually-hidden">Основные данные питомца</legend>
 
           <ul class="fields-group__inputs inputs">
@@ -80,10 +80,10 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--with-bottom-border fields-group">
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--with-border fields-group">
           <legend class="visually-hidden">Цель программы</legend>
 
-          <ul class="fields-group__choice choice">
+          <ul class="fields-group__choice fields-group__choice--with-border choice">
             <li class="choice__item">
               <label class="">
                 <input class="visually-hidden" type="radio" name="program-goal" value="weight-loss" checked>
@@ -141,8 +141,8 @@
         <fieldset class="questionnaire-form__fieldset field-related-products fields-group">
           <legend class="fields-group__title field-related-products__title">Дополнительно</legend>
 
-          <ul class="fields-group__choice choice">
-            <li class="choice__item">
+          <ul class="fields-group__choice field-related-products__list choice">
+            <li class="choice__item field-related-products__item">
               <label class="">
                 <input class="visually-hidden" type="checkbox" name="related-products" value="sugar-substitute" checked>
                 <span class="choice__mark choice__checkbox"></span>
@@ -150,7 +150,7 @@
               </label>
             </li>
 
-            <li class="choice__item">
+            <li class="choice__item field-related-products__item">
               <label class="">
                 <input class="visually-hidden" type="checkbox" name="related-products" value="water">
                 <span class="choice__mark choice__checkbox"></span>
@@ -158,7 +158,7 @@
               </label>
             </li>
 
-            <li class="choice__item">
+            <li class="choice__item field-related-products__item">
               <label class="">
                 <input class="visually-hidden" type="checkbox" name="related-products" value="milk">
                 <span class="choice__mark choice__checkbox"></span>
@@ -166,7 +166,7 @@
               </label>
             </li>
 
-            <li class="choice__item">
+            <li class="choice__item field-related-products__item">
               <label class="">
                 <input class="visually-hidden" type="checkbox" name="related-products" value="vitamins">
                 <span class="choice__mark choice__checkbox"></span>
@@ -176,10 +176,13 @@
           </ul>
         </fieldset>
 
-        <button class="questionnaire-form__button button" type="submit">
-          Отправить заявку
-        </button>
-        <span class="questionnaire-form__disclaimer">* — Обязательные поля</span>
+        <div class="questionnaire-form__footer">
+          <button class="questionnaire-form__button button" type="submit">
+            Отправить заявку
+          </button>
+
+          <span class="questionnaire-form__disclaimer">* — Обязательные поля</span>
+        </div>
       </form>
     </main>
 
@@ -209,24 +212,24 @@
         <h2 class="visually-hidden">Ссылки магазина</h2>
 
         <a class="footer-links__logotype" href="index.html" title="Перейти на Главную страницу">
-          <img class="" src="img/logo-catenergy-text.svg" alt="CAT ENERGY.">
+          <img class="" src="img/logo-catenergy-text.svg" width="128" height="24" alt="CAT ENERGY.">
         </a>
 
         <ul class="footer-links__list social-links">
-          <li class="social-links__item">
-            <a class="icon-vk" href="#" title="Наша группа в VK">
+          <li class="footer-links__item">
+            <a class="footer-links__link social-links__icon social-links__icon--vk" href="#" title="Наша группа в VK">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
 
-          <li class="social-links__item">
-            <a class="icon-youtube" href="#" title="Наш канал на YouTube">
+          <li class="footer-links__item">
+            <a class="footer-links__link social-links__icon social-links__icon--youtube" href="#" title="Наш канал на YouTube">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
 
-          <li class="social-links__item">
-            <a class="icon-telegram" href="#" title="Наш телеграм канал">
+          <li class="footer-links__item">
+            <a class="footer-links__link social-links__icon social-links__icon--telegram" href="#" title="Наш телеграм канал">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>

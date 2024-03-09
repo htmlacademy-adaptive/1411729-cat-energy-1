@@ -1,3 +1,14 @@
 .field-related-products__title {
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .field-related-products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .field-related-products__item {
+    flex-basis: 50%;
+  }
+}

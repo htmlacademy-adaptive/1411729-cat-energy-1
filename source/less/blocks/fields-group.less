@@ -1,5 +1,10 @@
+.fields-group {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .fields-group__title {
-  padding: 0 20px;
+  padding: 0;
 
   font-size: 24px;
   line-height: 26px;
@@ -8,13 +13,13 @@
 
 .fields-group__inputs {
   margin: 0 0 10px;
-  padding: 0 20px;
+  padding: 0;
   list-style: none;
 }
 
 .fields-group__choice {
   margin: 0 0 20px;
-  padding: 17px 20px 0;
+  padding: 17px 0 0;
   list-style: none;
 }
 
@@ -22,10 +27,24 @@
   display: flex;
 
   margin-bottom: 9px;
-  padding: 38px 20px 0;
+  padding: 38px 0 0;
 }
 
 .fields-group__comment {
   height: 123px;
   resize: vertical;
+}
+
+@media (min-width: @tablet-width) {
+  .fields-group {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .fields-group {
+    &__choice--with-border {
+      padding: 23px 27px 27px;
+      border: 1px solid @border-input-grey;
+    }
+  }
 }
