@@ -24,7 +24,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .advantages__title {
+    margin-bottom: 72px;
+  }
+
   .advantages__list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 134px;
+    row-gap: 134px;
+  }
+
+  .advantages__item {
+    margin-bottom: 0;
   }
 }

@@ -52,8 +52,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .story {
+    padding: 45px 30px 0;
+    background-color: @white;
+  }
+
+  .story__text {
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .story__title {
+    margin-bottom: 60px;
+  }
+
   .story__data-list {
     grid-template-columns: repeat(2, 162px) 1fr;
+    column-gap: 43px;
+
+    margin-bottom: 104px;
   }
 
   .story__data-result {
@@ -62,5 +81,10 @@
     justify-self: end;
 
     text-align: right;
+  }
+
+  .story__slider {
+    height: 613px;
+    background-color: @story-grey;
   }
 }

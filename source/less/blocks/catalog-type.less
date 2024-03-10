@@ -15,22 +15,43 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-type {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   .catalog-type__description {
-    display: flex;
+    display: grid;
+    grid-template-columns: 54% 1fr;
 
     &::after {
       content: "";
       display: block;
 
-      width: 200px;
-      height: 200px;
-      margin-right: 20px;
-
       background-color: @green;
       border-radius: 50%;
 
-      flex-shrink: 0;
+      justify-self: end;
     }
+
+    &--slim-cat::after {
+      width: 200px;
+      height: 211px;
+
+      margin-top: 4px;
+      margin-right: 34px;
+    }
+
+    &--big-cat::after {
+      width: 268px;
+      height: 200px;
+
+      margin-top: 14px;
+    }
+  }
+
+  .catalog-type__link {
+    font-size: 20px;
   }
 }
 

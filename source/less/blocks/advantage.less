@@ -24,6 +24,16 @@
     display: block;
     position: relative;
 
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+
+      margin-bottom: 31px;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -34,7 +44,7 @@
       z-index: -5;
 
       width: 136px;
-      height: 280px;
+      height: 228px;
 
       background-color: @basic-grey;
     }
