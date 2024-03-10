@@ -1,14 +1,24 @@
 .data-item__title {
+  width: min-content;
+  padding: 0 16px;
+
+  position: absolute;
+  bottom: -16px;
+
+  background-color: @story-grey;
+
+
   font-size: 12px;
   line-height: 12px;
   color: @special-dark-grey;
-
   text-transform: lowercase;
 }
 
 .data-item__data {
+  padding-top: 13px;
+  margin-bottom: 17px;
+
   .font-oswald(24px);
   line-height: 24px;
-
   text-transform: uppercase;
 }
