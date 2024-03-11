@@ -43,3 +43,11 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 75px;
+    row-gap: 75px;
+  }
+}

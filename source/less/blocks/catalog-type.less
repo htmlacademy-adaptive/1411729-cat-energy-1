@@ -55,3 +55,22 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .catalog-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .catalog-type__description {
+    flex-basis: 570px;
+    grid-template-columns: 1fr;
+
+    box-sizing: border-box;
+    padding: 47px 61px 0 51px;
+
+    &::after {
+      display: none;
+    }
+  }
+}

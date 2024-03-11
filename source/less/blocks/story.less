@@ -88,3 +88,31 @@
     background-color: @story-grey;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .story {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .story__data-list {
+    grid-template-columns: repeat(2, 162px);
+    row-gap: 56px;
+  }
+
+  .story__data-result {
+    display: flex;
+    grid-column: 1 / -1;
+    justify-self: start;
+
+    text-align: left;
+  }
+
+  .story__slider {
+    height: auto;
+
+    grid-column: -2 / -1;
+    grid-row: 1 / -1;
+  }
+}
