@@ -1,3 +1,7 @@
+.inputs__item {
+  margin-bottom: 14px;
+}
+
 .inputs__row {
   display: flex;
   align-items: baseline;
@@ -11,7 +15,6 @@
 
 .inputs__input {
   padding: 13px 14px 12px;
-  margin-bottom: 14px;
   flex-grow: 1;
 
   .font-oswald();
@@ -23,5 +26,22 @@
 
   &::placeholder {
     color: @special-dark-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .inputs__item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 7px;
+    }
+  }
+
+  .inputs__input {
+    padding-left: 18px;
+
+    font-size: 20px;
+    line-height: 25px;
   }
 }
