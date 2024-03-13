@@ -1,5 +1,5 @@
 .card-see-more__title {
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 9px;
 
   .font-oswald();
@@ -7,6 +7,17 @@
   color: @dark-grey;
   text-transform: uppercase;
   text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    margin-bottom: 23px;
+
+    background-color: aqua;
+  }
 }
 
 .card-see-more__text {
