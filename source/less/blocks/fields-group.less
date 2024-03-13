@@ -72,3 +72,46 @@
     height: 148px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .fields-group {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .fields-group__title {
+    margin-bottom: 78px;
+  }
+
+  .fields-group__pet-data {
+    padding-right: 40px;
+  }
+
+  .fields-group__goals-field {
+    padding-left: 40px;
+  }
+
+  .fields-group {
+    &__choice--with-border {
+      padding-top: 25px;
+    }
+  }
+
+  .fields-group__contact-info {
+    margin-bottom: 63px;
+    grid-column: 1 / -1;
+  }
+
+  .fields-group__input-contacts {
+    display: flex;
+
+    .inputs__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .fields-group__comment-field {
+    margin-bottom: 70px;
+    grid-column: 1 / -1;
+  }
+}

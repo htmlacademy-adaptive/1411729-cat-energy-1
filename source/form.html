@@ -53,7 +53,7 @@
           программу питания для вашего кота
         </p>
 
-        <fieldset class="questionnaire-form__fieldset fields-group">
+        <fieldset class="questionnaire-form__fieldset fields-group fields-group__pet-data">
           <legend class="visually-hidden">Основные данные питомца</legend>
 
           <ul class="fields-group__inputs inputs">
@@ -80,7 +80,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--with-border fields-group">
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--with-border fields-group fields-group__goals-field">
           <legend class="visually-hidden">Цель программы</legend>
 
           <ul class="fields-group__choice fields-group__choice--with-border fields-group__program-goals choice">
@@ -110,18 +110,18 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset fields-group field-contact-info">
+        <fieldset class="questionnaire-form__fieldset fields-group fields-group__contact-info field-contact-info">
           <legend class="fields-group__title field-contact-info__title">Контактные данные (владельца кота)</legend>
 
-          <ul class="fields-group__inputs inputs">
-            <li class="inputs__item">
+          <ul class="fields-group__inputs fields-group__input-contacts inputs">
+            <li class="inputs__item inputs__item-mail">
               <label class="inputs__row">
                 <span class="inputs__name">E-mail:*</span>
                 <input class="inputs__input" type="email" placeholder="" name="e-mail" value="kuklachev@gmail.com" required>
               </label>
             </li>
 
-            <li class="">
+            <li class="inputs__item inputs__item-phone">
               <label class="inputs__row">
                 <span class="inputs__name">Телефон:*</span>
                 <input class="inputs__input" type="tel" placeholder="" name="phone" value="8 (960) 900-60-90" required>
@@ -130,7 +130,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset fields-group inputs">
+        <fieldset class="questionnaire-form__fieldset fields-group fields-group__comment-field inputs">
           <legend class="fields-group__title">Комментарий</legend>
 
           <label class="fields-group__comment-wrapper">

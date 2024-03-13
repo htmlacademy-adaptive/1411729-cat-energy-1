@@ -26,3 +26,15 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .field-related-products__container {
+    margin-bottom: 60px;
+    grid-column: 1 / -1;
+  }
+
+  .field-related-products__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}

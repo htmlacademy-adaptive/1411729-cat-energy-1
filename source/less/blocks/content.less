@@ -63,8 +63,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .content__form {
+    width: 1440px;
+    margin: 0 auto 79px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .content__promo-banner {
     margin-bottom: 83px;
+    padding-top: 36px;
   }
 
   .content__catalog-choosing {
