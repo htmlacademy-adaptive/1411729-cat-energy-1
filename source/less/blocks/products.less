@@ -3,8 +3,8 @@
 
   display: grid;
   grid-template-areas:
-      "image info"
-      "button button";
+    "image info"
+    "button button";
   grid-template-columns: repeat(2, 1fr);
   row-gap: 19px;
 
@@ -13,15 +13,17 @@
 
 @media (min-width: @tablet-width) {
   .products__card {
-    padding: 40px 37px;
+    padding: 10px 37px 0;
 
-    justify-items: center;
+    // justify-items: center;
     grid-template-areas:
-      "image image"
-      "info info"
-      "button button";
+      "image"
+      "info"
+      "button";
+    grid-template-columns: 1fr;
+    row-gap: 22px;
 
     border: none;
-    background-color: @basic-grey;
+    background: linear-gradient(0deg, fade(@basic-grey, 100%) 0%, fade(@basic-grey, 100%) 84%, fade(@basic-grey, 0%) 84%);
   }
 }

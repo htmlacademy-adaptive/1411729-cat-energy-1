@@ -14,9 +14,9 @@
 
     width: 30px;
     height: 30px;
-    margin-bottom: 23px;
+    margin: 0 auto 23px;
 
-    background-color: aqua;
+    background-color: @basic-grey;
   }
 }
 
@@ -44,6 +44,32 @@
   .card-see-more {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .card-see-more__title {
+    width: 70%;
+    margin-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 51px;
+    }
+  }
+
+  .card-see-more__text {
+    width: 70%;
+    margin-bottom: 82px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .card-see-more__button {
+    margin-bottom: 39px;
   }
 }
