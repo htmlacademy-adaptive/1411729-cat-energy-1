@@ -44,10 +44,10 @@
       </nav>
     </header>
 
-    <main class="page__main-content content">
+    <main class="page__main-content content catalog">
       <h2 class="page__title content__title">Каталог продукции</h2>
 
-      <section class="content__catalog catalog">
+      <section class="content__catalog catalog__container">
         <h3 class="visually-hidden">Основные товары</h3>
 
         <ul class="catalog__products products">
@@ -308,7 +308,7 @@
         </ul>
       </section>
 
-      <section class="content__add-on-products add-on-products">
+      <section class="content__add-on-products catalog__container add-on-products">
         <h3 class="add-on-products__title section-title">Дополнительные товары</h3>
 
         <ul class="add-on-products__list short-cards">
@@ -364,9 +364,23 @@
             </a>
           </li>
         </ul>
+
+        <section class="content__event-promo event-promo">
+          <div class="event-promo__banner">
+            <h3 class="visually-hidden">Подарок!</h3>
+
+            <span class="event-promo__icon"></span>
+
+            <p class="event-promo__text promo-paragraph">
+              Закажите все<br>
+              и получите чехол для
+              кота в подарок!
+            </p>
+          </div>
+        </section>
       </section>
 
-      <section class="content__event-promo event-promo">
+      <!-- <section class="content__event-promo catalog__container event-promo">
         <div class="event-promo__banner">
           <h3 class="visually-hidden">Подарок!</h3>
 
@@ -378,7 +392,7 @@
             кота в подарок!
           </p>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="page__footer site-footer">

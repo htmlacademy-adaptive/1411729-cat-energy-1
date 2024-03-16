@@ -15,7 +15,6 @@
 
 @media (min-width: @tablet-width) {
   .packing {
-    margin: 0;
     justify-content: end;
   }
 
@@ -32,5 +31,20 @@
 
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .packing {
+    justify-content: initial;
+  }
+
+  .packing__type {
+    flex-basis: 80%;
+  }
+
+  .packing__price {
+    flex-basis: initial;
+    text-align: left;
   }
 }

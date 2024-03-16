@@ -15,7 +15,9 @@
 }
 
 .content__add-on-products {
+  margin-bottom: 35px;
   padding: 17px 20px 0;
+
   border-top: 1px solid @line-grey;
 }
 
@@ -29,7 +31,6 @@
 }
 
 .content__event-promo {
-  margin: 0 20px 35px;
   border-top: 1px solid @line-grey;
 }
 
@@ -41,7 +42,7 @@
 
   .content__add-on-products {
     padding: 0 30px;
-    margin-bottom: 69px;
+    margin-bottom: 75px;
 
     border-top: none;
   }
@@ -70,14 +71,17 @@
   }
 
   .content__event-promo {
-    margin: 0 0 75px;
-    padding: 0 30px;
-
     border-top: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .content__add-on-products {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+
   .content__form {
     width: 1440px;
     margin: 0 auto 79px;
@@ -110,5 +114,9 @@
     grid-template-rows: 206px 165px 227px;
 
     border-top: none;
+  }
+
+  .content__event-promo {
+    margin-bottom: 87px;
   }
 }

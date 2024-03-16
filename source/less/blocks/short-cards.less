@@ -55,8 +55,35 @@
     }
   }
 
+  .short-cards__info-row {
+    margin: 0;
+  }
+
   .short-cards__order-link {
     margin-bottom: 27px;
     grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .short-cards__card {
+    padding: 17px 0 14px;
+    grid-template-columns: repeat(2, 1fr) 244px;
+    column-gap: 20px;
+
+    border: none;
+    border-bottom: 1px solid @line-grey;
+
+    &:first-child {
+      border-top: 1px solid @line-grey;
+    }
+  }
+
+  .short-cards__order-link {
+    box-sizing: border-box;
+
+    margin-bottom: 0;
+    grid-column: 3 / 4;
+    transform: translateY(-2px);
   }
 }

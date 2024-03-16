@@ -30,3 +30,22 @@
     border: 1px solid @line-grey;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .catalog__container {
+    width: 1440px;
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+
+  .catalog__products {
+    margin-bottom: 64px;
+    padding: 0;
+
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
