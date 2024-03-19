@@ -1,6 +1,6 @@
 .footer-links__list  {
   margin: 0 0 20px;
-  padding: 20px 0 19px;
+  padding: 20px 0 0;
   list-style: none;
 
   border-top: 1px solid @line-header-grey;
@@ -9,6 +9,7 @@
 
 .footer-links__item {
   margin-right: 24px;
+  margin-bottom: 19px;
 
   &:last-child {
     margin-right: 0;
@@ -50,6 +51,8 @@
   .footer-links__index-link {
     margin-bottom: 0;
     padding-left: 11px;
+
+    flex-shrink: 0;
   }
 
   .footer-links__logotype {
@@ -58,6 +61,7 @@
 
   .footer-links__academy {
     padding-right: 9px;
+    flex-shrink: 0;
   }
 }
 
