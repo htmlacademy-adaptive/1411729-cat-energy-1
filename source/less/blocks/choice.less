@@ -1,7 +1,36 @@
 .choice__item {
-  margin-bottom: 19px;
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.choice__input-set {
+  display: flex;
+  align-items: center;
+}
+
+.choice__field {
+  display: block;
+
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-right: 15px;
+
+  border: 1px solid @spacial-grey;
+}
+
+.choice__radio {
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .choice__field {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 20px;
   }
 }

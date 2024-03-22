@@ -1,7 +1,7 @@
 .advantage__description {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 0;
 
   font-size: 14px;
   line-height: 18px;
@@ -16,5 +16,38 @@
     margin-right: 20px;
 
     background-color: @green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__description {
+    width: 265px;
+    display: block;
+    position: relative;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+
+      margin-bottom: 31px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      right: 15px;
+      z-index: -5;
+
+      width: 136px;
+      height: 228px;
+
+      background-color: @basic-grey;
+    }
   }
 }

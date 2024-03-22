@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи — Каталог</title>
   </head>
@@ -43,10 +44,10 @@
       </nav>
     </header>
 
-    <main class="page__main-content content">
+    <main class="page__main-content content catalog">
       <h2 class="page__title content__title">Каталог продукции</h2>
 
-      <section class="content__catalog catalog">
+      <section class="content__catalog catalog__container">
         <h3 class="visually-hidden">Основные товары</h3>
 
         <ul class="catalog__products products">
@@ -294,18 +295,20 @@
               Заказать
             </a>
           </li>
-        </ul>
 
-        <div class="catalog__card-see-more card-see-more">
-          <p class="card-see-more__title">Показать еще 100500 товаров</p>
-          <p class="card-see-more__text">На самом деле вкусов гораздо больше!</p>
-          <button class="card-see-more__button button button--uncolored" type="button">
-            Показать все
-          </button>
-        </div>
+          <li class="catalog__card-see-more card-see-more">
+            <p class="card-see-more__title">Показать еще 100500 товаров</p>
+
+            <p class="card-see-more__text">На самом деле вкусов гораздо больше!</p>
+
+            <button class="card-see-more__button button button--uncolored" type="button">
+              Показать все
+            </button>
+          </li>
+        </ul>
       </section>
 
-      <section class="content__add-on-products add-on-products">
+      <section class="content__add-on-products catalog__container add-on-products">
         <h3 class="add-on-products__title section-title">Дополнительные товары</h3>
 
         <ul class="add-on-products__list short-cards">
@@ -361,65 +364,69 @@
             </a>
           </li>
         </ul>
-      </section>
 
-      <section class="content__event-promo event-promo">
-        <div class="event-promo__wrapper">
-          <h3 class="visually-hidden">Подарок!</h3>
+        <section class="content__event-promo event-promo">
+          <div class="event-promo__banner">
+            <h3 class="visually-hidden">Подарок!</h3>
 
-          <p class="event-promo__text promo-paragraph">
-            Закажите все
-            и получите чехол для
-            кота в подарок!
-          </p>
-        </div>
+            <span class="event-promo__icon"></span>
+
+            <p class="event-promo__text promo-paragraph">
+              Закажите все<br>
+              и получите чехол для
+              кота в подарок!
+            </p>
+          </div>
+        </section>
       </section>
     </main>
 
     <footer class="page__footer site-footer">
-      <section class="site-footer__info information">
+      <section class="site-footer__info">
         <h2 class="visually-hidden">Адрес магазина</h2>
 
-        <p class="information__call-to-action">
-          Приглашаем<br>
-          к сотрудничеству
-          дилеров!
-        </p>
+        <div class="site-footer__info-container information">
+          <p class="information__call-to-action">
+            Приглашаем<br>
+            к сотрудничеству
+            дилеров!
+          </p>
 
-        <address class="information__address">
-          ул. Большая
-          Конюшенная, д. 19/8<br>
-          <span class="information__address-town">Санкт-Петербург</span>
-        </address>
+          <address class="information__address">
+            ул. Большая
+            Конюшенная, д. 19/8<br>
+            <span class="information__address-town">Санкт-Петербург</span>
+          </address>
+        </div>
       </section>
 
       <section class="site-footer__map">
         <h2 class="visually-hidden">Карта с отмеченным местом расположения магазина</h2>
-        <img src="img/stub-map-mobile.jpg" width="320" height="360">
+        <img class="site-footer__map-image" src="img/stub-map-mobile.jpg" width="320" height="360">
       </section>
 
       <section class="site-footer__links footer-links">
         <h2 class="visually-hidden">Ссылки магазина</h2>
 
-        <a class="footer-links__logotype" href="index.html" title="Перейти на Главную страницу">
-          <img class="" src="img/logo-catenergy-text.svg" alt="CAT ENERGY.">
+        <a class="footer-links__index-link" href="index.html" title="Перейти на Главную страницу">
+          <img class="footer-links__logotype" src="img/logo-catenergy-text.svg" width="128" height="24" alt="CAT ENERGY.">
         </a>
 
         <ul class="footer-links__list social-links">
-          <li class="social-links__item">
-            <a class="icon-vk" href="#" title="Наша группа в VK">
+          <li class="footer-links__item">
+            <a class="footer-links__link social-links__icon social-links__icon--vk" href="#" title="Наша группа в VK">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
 
-          <li class="social-links__item">
-            <a class="icon-youtube" href="#" title="Наш канал на YouTube">
+          <li class="footer-links__item">
+            <a class="footer-links__link social-links__icon social-links__icon--youtube" href="#" title="Наш канал на YouTube">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
 
-          <li class="social-links__item">
-            <a class="icon-telegram" href="#" title="Наш телеграм канал">
+          <li class="footer-links__item">
+            <a class="footer-links__link social-links__icon social-links__icon--telegram" href="#" title="Наш телеграм канал">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
