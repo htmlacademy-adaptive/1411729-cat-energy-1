@@ -20,6 +20,14 @@
   border-top: 1px solid @line-header-grey;
 }
 
+@media (max-width: @tablet-width - 1) {
+  .site-header--nojs {
+    &.page__header {
+      padding: 13px 0 0;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page__header {
     margin-bottom: 19px;

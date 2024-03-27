@@ -10,3 +10,34 @@
   padding-right: 1px;
   padding-top: 2px;
 }
+
+@media (max-width: @tablet-width - 1) {
+  .site-header--nojs {
+    &.site-header {
+      display: grid;
+    }
+
+    .site-header__logo {
+      margin-bottom: 14px;
+      padding-left: 20px;
+    }
+
+    .site-header__navigation {
+      padding: 0;
+    }
+
+    .site-menu__list {
+      display: block;
+      position: static;
+    }
+
+    .site-menu__button {
+      display: none;
+    }
+
+    .menu-links__item {
+      border-bottom: none;
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+}

@@ -8,8 +8,10 @@
   </head>
 
   <body class="page__body">
-
-    <header class="page__header page__header--index-style site-header">
+    <!--
+      Если JavaScript не работает, работает site-header--nojs
+    -->
+    <header class="page__header page__header--index-style site-header site-header--nojs">
       <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
 
       <a class="site-header__logo logotype" href="index.html" title="Перейти на Главную страницу">
@@ -17,8 +19,12 @@
         <img class="logotype__text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
 
-      <nav class="site-header__navigation site-menu">
-        <button class="site-menu__button site-menu__button--open" type="button">
+      <!--
+        Чтобы открыть меню в мобильной версии,
+        добавь site-menu--opened вместо site-menu--closed
+      -->
+      <nav class="site-header__navigation site-menu site-menu--closed">
+        <button class="site-menu__button" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
 
@@ -234,5 +240,7 @@
         </a>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
