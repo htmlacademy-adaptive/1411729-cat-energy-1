@@ -18,12 +18,32 @@
     content: "";
     display: block;
 
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--slim-cat {
+    margin-top: -3px;
+  }
+
+  &--slim-cat::before {
     width: 50px;
-    height: 50px;
+    height: 53px;
     margin-right: 20px;
 
-    background-color: @green;
-    border-radius: 50%;
+    background-image: url("../../img/cat-back--slim.svg");
+  }
+
+  &--big-cat {
+    margin-left: -7px;
+  }
+
+  &--big-cat::before {
+    width: 67px;
+    height: 50px;
+    margin-right: 11px;
+
+    background-image: url("../../img/cat-back--big.svg");
   }
 }
 
@@ -46,6 +66,7 @@
   }
 
   .food-strategy__title {
+    margin: 0;
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -74,15 +95,32 @@
   }
 
   .food-strategy__title {
-    margin-bottom: 41px;
+    margin-bottom: 39px;
 
     &::before {
       display: block;
+    }
 
+    &--slim-cat {
+      margin-top: -4px;
+      margin-left: -1px;
+    }
+
+    &--slim-cat::before {
       width: 100px;
-      height: 100px;
+      height: 106px;
+      margin-right: 62px;
+    }
 
-      margin-right: 61px;
+    &--big-cat {
+      margin-top: 1px;
+      margin-left: -17px;
+    }
+
+    &--big-cat::before {
+      width: 134px;
+      height: 100px;
+      margin-right: 44px;
     }
   }
 
