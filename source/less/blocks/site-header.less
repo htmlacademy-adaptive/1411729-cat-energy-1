@@ -4,6 +4,20 @@
 
 .site-header__logo {
   margin-right: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:focus-visible {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .site-header__navigation {
