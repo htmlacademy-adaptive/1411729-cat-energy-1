@@ -33,7 +33,7 @@
 
 @media (min-width: @tablet-width) {
   .menu-links__item {
-    margin-right: 34px;
+    margin-right: 32px;
     border: 0;
   }
 
@@ -59,9 +59,12 @@
 
   .menu-links__link {
     font-size: 20px;
-    color: @white;
 
-    &--current {
+    &--white {
+      color: @white;
+    }
+
+    &--current.menu-links__link--white {
       box-shadow: 0 2px @white;
     }
   }
