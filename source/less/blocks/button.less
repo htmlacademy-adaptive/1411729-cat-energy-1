@@ -2,6 +2,21 @@
   color: @white;
   background-color: @green;
 
+  &:hover {
+    background-color: @dark-green;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: @dark-green;
+    outline: none;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
   &--uncolored {
     color: @special-dark-grey;
     background-color: @basic-grey;

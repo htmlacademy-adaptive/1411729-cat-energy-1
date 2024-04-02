@@ -92,7 +92,7 @@
           <ul class="fields-group__choice fields-group__choice--with-border fields-group__program-goals choice">
             <li class="choice__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="radio" name="program-goal" value="weight-loss" checked>
+                <input class="visually-hidden choice__input" type="radio" name="program-goal" value="weight-loss" checked>
                 <span class="choice__field choice__radio"></span>
                 <span class="choice__name">Похудение</span>
               </label>
@@ -100,7 +100,7 @@
 
             <li class="choice__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="radio" name="program-goal" value="weight-gain">
+                <input class="visually-hidden choice__input" type="radio" name="program-goal" value="weight-gain">
                 <span class="choice__field choice__radio"></span>
                 <span class="choice__name">Набор массы</span>
               </label>
@@ -108,7 +108,7 @@
 
             <li class="choice__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="radio" name="program-goal" value="dont-know">
+                <input class="visually-hidden choice__input" type="radio" name="program-goal" value="dont-know">
                 <span class="choice__field choice__radio"></span>
                 <span class="choice__name">Не знаю (нужен ваш совет)</span>
               </label>
@@ -123,14 +123,18 @@
             <li class="inputs__item inputs__item-mail">
               <label class="inputs__row">
                 <span class="inputs__name">E-mail:*</span>
+
                 <input class="inputs__input" type="email" placeholder="" name="e-mail" value="kuklachev@gmail.com" required>
+                <span class="inputs__row-icon inputs__row-icon--email"></span>
               </label>
             </li>
 
             <li class="inputs__item inputs__item-phone">
               <label class="inputs__row">
                 <span class="inputs__name">Телефон:*</span>
+
                 <input class="inputs__input" type="tel" placeholder="" name="phone" value="8 (960) 900-60-90" required>
+                <span class="inputs__row-icon inputs__row-icon--phone"></span>
               </label>
             </li>
           </ul>
@@ -150,7 +154,7 @@
           <ul class="fields-group__choice field-related-products__list choice">
             <li class="choice__item field-related-products__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="checkbox" name="related-products" value="sugar-substitute" checked>
+                <input class="visually-hidden choice__input" type="checkbox" name="related-products" value="sugar-substitute" checked>
                 <span class="choice__field choice__checkbox"></span>
                 <span class="choice__name">Сахарозаменитель</span>
               </label>
@@ -158,7 +162,7 @@
 
             <li class="choice__item field-related-products__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="checkbox" name="related-products" value="water">
+                <input class="visually-hidden choice__input" type="checkbox" name="related-products" value="water">
                 <span class="choice__field choice__checkbox"></span>
                 <span class="choice__name">Питьевая вода</span>
               </label>
@@ -166,7 +170,7 @@
 
             <li class="choice__item field-related-products__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="checkbox" name="related-products" value="milk">
+                <input class="visually-hidden choice__input" type="checkbox" name="related-products" value="milk">
                 <span class="choice__field choice__checkbox"></span>
                 <span class="choice__name">Молоко</span>
               </label>
@@ -174,7 +178,7 @@
 
             <li class="choice__item field-related-products__item">
               <label class="choice__input-set">
-                <input class="visually-hidden" type="checkbox" name="related-products" value="vitamins">
+                <input class="visually-hidden choice__input" type="checkbox" name="related-products" value="vitamins">
                 <span class="choice__field choice__checkbox"></span>
                 <span class="choice__name">Витамины</span>
               </label>

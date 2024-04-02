@@ -6,6 +6,7 @@
 
   border: none;
   background-color: @white;
+  cursor: pointer;
 }
 
 .site-menu__list {
@@ -39,9 +40,10 @@
   .site-menu--opened {
     .site-menu__list {
       position: absolute;
+      top: 65px;
       right: 0;
       left: 0;
-      top: 65px;
+      z-index: 10;
 
       border-top: 1px solid @line-menu-grey;
     }
