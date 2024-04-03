@@ -21,4 +21,22 @@
     color: @special-dark-grey;
     background-color: @basic-grey;
   }
+
+  &--uncolored:hover {
+    background-color: @line-grey;
+  }
+
+  &--uncolored:focus,
+  &--uncolored:focus-visible {
+    background-color: @line-grey;
+  }
+
+  &--uncolored:active {
+    color: @special-dark-grey;
+    background-color: @line-grey;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }

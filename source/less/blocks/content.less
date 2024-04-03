@@ -34,10 +34,25 @@
 }
 
 .content__add-on-products {
+  position: relative;
   margin-bottom: 35px;
   padding: 17px 20px 0;
 
   border-top: 1px solid @line-grey;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 200vw;
+    height: 2px;
+
+    position: absolute;
+    top: 40px;
+    left: -100vw;
+    z-index: -5;
+
+    background-color: @green;
+  }
 }
 
 .content__form {
@@ -64,6 +79,10 @@
     margin-bottom: 75px;
 
     border-top: none;
+
+    &::before {
+      top: 34px;
+    }
   }
 
   .content__form {
@@ -107,6 +126,10 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 80px;
+
+    &::before {
+      top: 35px;
+    }
   }
 
   .content__form {
