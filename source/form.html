@@ -117,7 +117,10 @@
         </fieldset>
 
         <fieldset class="questionnaire-form__fieldset fields-group fields-group__contact-info field-contact-info">
-          <legend class="fields-group__title field-contact-info__title">Контактные данные (владельца кота)</legend>
+          <div class="fields-group__title-container title-container field-contact-info__title">
+            <legend class="fields-group__title">Контактные данные&nbsp;<br>(владельца кота)</legend>
+            <div class="title-container__head-line"></div>
+          </div>
 
           <ul class="fields-group__inputs fields-group__input-contacts inputs">
             <li class="inputs__item inputs__item-mail">
@@ -141,15 +144,21 @@
         </fieldset>
 
         <fieldset class="questionnaire-form__fieldset fields-group fields-group__comment-field inputs">
-          <legend class="fields-group__title">Комментарий</legend>
+          <div class="fields-group__title-container title-container field-comment__title">
+            <legend class="fields-group__title">Комментарий</legend>
+            <div class="title-container__head-line"></div>
+          </div>
 
           <label class="fields-group__comment-wrapper">
             <textarea class="fields-group__comment inputs__input" name="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset field-related-products field-related-products__container fields-group">
-          <legend class="fields-group__title field-related-products__title">Дополнительно</legend>
+        <fieldset class="questionnaire-form__fieldset fields-group field-related-products field-related-products__container">
+          <div class="fields-group__title-container title-container field-related-products__title">
+            <legend class="fields-group__title">Дополнительно</legend>
+            <div class="title-container__head-line"></div>
+          </div>
 
           <ul class="fields-group__choice field-related-products__list choice">
             <li class="choice__item field-related-products__item">

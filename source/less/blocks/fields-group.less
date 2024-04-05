@@ -4,11 +4,35 @@
 }
 
 .fields-group__title {
+  position: relative;
   padding: 0;
 
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+
+  background-color: @white;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    background-color: @white;
+  }
+
+  &::before {
+    left: -40px;
+  }
+
+  &::after {
+    right: -20px;
+    width: 20px;
+  }
 }
 
 .fields-group__pet-data {
@@ -21,6 +45,7 @@
 
 .fields-group__contact-info {
   margin-bottom: 10px;
+  padding-top: 26px;
 }
 
 .fields-group__comment-field {
@@ -63,10 +88,17 @@
   }
 
   .fields-group__title {
-    margin-bottom: 87px;
-
     font-size: 36px;
     line-height: 36px;
+
+    br {
+      display: none;
+    }
+
+    &::after {
+      right: -40px;
+      width: 40px;
+    }
   }
 
   .fields-group__pet-data {
@@ -75,6 +107,7 @@
 
   .fields-group__contact-info {
     margin-bottom: 58px;
+    padding-top: 0;
   }
 
   .fields-group__program-goals {
@@ -107,10 +140,6 @@
     &__choice--with-border {
       padding-top: 25px;
     }
-  }
-
-  .fields-group__title {
-    margin-bottom: 78px;
   }
 
   .fields-group__pet-data {
