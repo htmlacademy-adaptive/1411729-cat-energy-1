@@ -1,0 +1,30 @@
+.title-container {
+  position: relative;
+  display: flex;
+}
+
+.title-container__head-line {
+  width: 100vw;
+  height: 2px;
+
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  z-index: -5;
+
+  background-color: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .title-container__head-line {
+    top: 23px;
+    left: -70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-container__head-line {
+    top: 23px;
+    left: calc(((100vw - 1440px) / -2) - 110px);
+  }
+}

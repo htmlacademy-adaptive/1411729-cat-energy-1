@@ -4,11 +4,52 @@
 }
 
 .fields-group__title {
+  position: relative;
   padding: 0;
 
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+
+  background-color: @white;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    background-color: @white;
+  }
+
+  &::before {
+    left: -40px;
+  }
+
+  &::after {
+    right: -20px;
+    width: 20px;
+  }
+}
+
+.fields-group__pet-data {
+  margin-bottom: 9px;
+}
+
+.fields-group__goals-field {
+  padding-top: 1px;
+}
+
+.fields-group__contact-info {
+  margin-bottom: 10px;
+  padding-top: 26px;
+}
+
+.fields-group__comment-field {
+  margin-bottom: 14px;
 }
 
 .fields-group__inputs {
@@ -39,20 +80,34 @@
   .fields-group {
     padding-right: 70px;
     padding-left: 70px;
-  }
 
-  .fields-group__title {
-    margin-bottom: 87px;
-
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .fields-group {
     &__choice--with-border {
       padding: 22px 26px 25px;
       border: 1px solid @border-input-grey;
     }
+  }
+
+  .fields-group__title {
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+
+    &::after {
+      right: -40px;
+      width: 40px;
+    }
+  }
+
+  .fields-group__pet-data {
+    margin-bottom: 64px;
+  }
+
+  .fields-group__contact-info {
+    margin-bottom: 58px;
+    padding-top: 0;
   }
 
   .fields-group__program-goals {
@@ -71,16 +126,20 @@
   .fields-group__comment {
     height: 148px;
   }
+
+  .fields-group__comment-field {
+    margin-bottom: 65px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .fields-group {
     padding-right: 110px;
     padding-left: 110px;
-  }
 
-  .fields-group__title {
-    margin-bottom: 78px;
+    &__choice--with-border {
+      padding-top: 25px;
+    }
   }
 
   .fields-group__pet-data {
@@ -89,12 +148,6 @@
 
   .fields-group__goals-field {
     padding-left: 40px;
-  }
-
-  .fields-group {
-    &__choice--with-border {
-      padding-top: 25px;
-    }
   }
 
   .fields-group__contact-info {

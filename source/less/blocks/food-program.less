@@ -1,8 +1,5 @@
-.food-program__wrapper {
-  display: grid;
-  justify-items: center;
-
-  padding: 27px 20px 0;
+.food-program {
+  color: @white;
 }
 
 .food-program__title {
@@ -42,12 +39,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .food-program__wrapper {
-    position: relative;
-    padding-right: 30px;
-    padding-left: 30px;
-
-    justify-items: start;
+  .food-program {
+    color: initial;
   }
 
   .food-program__title {
@@ -90,21 +83,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .food-program__wrapper {
-    width: 1220px;
-    box-sizing: border-box;
-    margin: 0 auto;
-
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: 80px;
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 160px 72px 237px;
-    justify-items: start;
-    align-items: start;
-  }
-
   .food-program__title {
     width: unset;
     margin-bottom: 40px;

@@ -2,8 +2,41 @@
   color: @white;
   background-color: @green;
 
+  &:hover {
+    background-color: @dark-green;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: @dark-green;
+    outline: none;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
   &--uncolored {
     color: @special-dark-grey;
     background-color: @basic-grey;
+  }
+
+  &--uncolored:hover {
+    background-color: @line-grey;
+  }
+
+  &--uncolored:focus,
+  &--uncolored:focus-visible {
+    background-color: @line-grey;
+  }
+
+  &--uncolored:active {
+    color: @special-dark-grey;
+    background-color: @line-grey;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }

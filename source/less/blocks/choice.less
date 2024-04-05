@@ -1,3 +1,14 @@
+.choice__field {
+  display: block;
+
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-right: 15px;
+
+  border: 1px solid @spacial-grey;
+}
+
 .choice__item {
   margin-bottom: 13px;
 
@@ -11,19 +22,39 @@
   align-items: center;
 }
 
-.choice__field {
-  display: block;
+.choice__radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  margin-right: 15px;
-
-  border: 1px solid @spacial-grey;
+  border-radius: 50%;
 }
 
-.choice__radio {
-  border-radius: 50%;
+.choice__input {
+  &:focus + .choice__field,
+  &:focus-visible + .choice__field {
+    border-color: @hover-grey;
+  }
+
+  &:checked + .choice__checkbox {
+    background: url("../../img/inputs-icons/tick.svg") no-repeat center;
+  }
+
+  &:checked + .choice__radio::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+
+    position: absolute;
+
+    background-color: @green;
+    border-radius: 50%;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -32,5 +63,16 @@
     height: 40px;
 
     margin-right: 20px;
+  }
+
+  .choice__input {
+    &:checked + .choice__checkbox {
+      background-size: contain;
+    }
+
+    &:checked + .choice__radio::after {
+      width: 18px;
+      height: 18px;
+    }
   }
 }

@@ -1,22 +1,35 @@
 .card-see-more__title {
-  margin-top: 0;
-  margin-bottom: 9px;
+  margin: 0 auto 9px;
 
   .font-oswald();
   line-height: 20px;
   color: @dark-grey;
   text-transform: uppercase;
   text-align: center;
+}
 
-  &::before {
+.card-see-more__icon {
+  position: relative;
+
+  display: block;
+  width: 30px;
+  margin: 0 auto 53px;
+
+  &::before,
+  &::after {
     content: "";
     display: block;
+    width: 100%;
+    height: 2px;
 
-    width: 30px;
-    height: 30px;
-    margin: 0 auto 23px;
+    position: absolute;
+    top: 14px;
 
-    background-color: @basic-grey;
+    background-color: @icon-grey;
+  }
+
+  &::before {
+    transform: rotate(90deg);
   }
 }
 
@@ -61,6 +74,11 @@
     }
   }
 
+  .card-see-more__icon {
+    width: 60px;
+    margin-bottom: 96px;
+  }
+
   .card-see-more__text {
     width: 70%;
     margin-bottom: 82px;
@@ -82,6 +100,10 @@
     &::before {
       margin-bottom: 40px;
     }
+  }
+
+  .card-see-more__icon {
+    margin-bottom: 85px;
   }
 
   .card-see-more__text {
