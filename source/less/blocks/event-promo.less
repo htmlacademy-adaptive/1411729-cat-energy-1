@@ -7,10 +7,16 @@
   padding-top: 59px;
 
   background-color: @green;
-  background-image: url("../../img/event-promo-background-small.jpg");
+  background-image: url("../../img/backgrounds/event-promo-background-small.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .event-promo__banner {
+    background-image: url("../../img/backgrounds/event-promo-background-small@2x.jpg");
+  }
 }
 
 .event-promo__icon {
@@ -20,7 +26,7 @@
   height: 80px;
   margin-bottom: 48px;
 
-  background: url("../../img/icon_gift.svg") no-repeat center;
+  background: url("../../img/icon-gift.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -37,9 +43,16 @@
 @media (min-width: @tablet-width) {
   .event-promo__banner {
     flex-direction: row;
-
     margin-top: 0;
     padding: 57px 102px 61px 79px;
+
+    background-image: url("../../img/backgrounds/event-promo-background-wide.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .event-promo__banner {
+      background-image: url("../../img/backgrounds/event-promo-background-wide@2x.jpg");
+    }
   }
 
   .event-promo__icon {
@@ -64,6 +77,14 @@
   .event-promo__banner {
     flex-direction: column;
     padding: 56px 40px 44px;
+
+    background-image: url("../../img/backgrounds/event-promo-background-small.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .event-promo__banner {
+      background-image: url("../../img/backgrounds/event-promo-background-small@2x.jpg");
+    }
   }
 
   .event-promo__icon {

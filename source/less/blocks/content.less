@@ -22,10 +22,18 @@
     position: absolute;
     z-index: -5;
 
-    background-image: url("../../img/cat-background-mobile.jpg");
+    background-image: url("../../img/backgrounds/cat-background-mobile.jpg");
     background-color: @dark-green;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .content__promo-banner {
+    &::before {
+      background-image: url("../../img/backgrounds/cat-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -161,9 +169,17 @@
       left: 50%;
       top: 0;
 
-      background-image: url("../../img/cat-background-desktop.jpg");
+      background-image: url("../../img/backgrounds/cat-background-desktop.jpg");
       background-position: left;
       background-size: cover;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .content__promo-banner {
+      &::before {
+        background-image: url("../../img/backgrounds/cat-background-desktop@2x.jpg");
+      }
     }
   }
 
