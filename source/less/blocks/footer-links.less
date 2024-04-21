@@ -1,6 +1,6 @@
 .footer-links__list {
   margin: 0 0 20px;
-  padding: 20px 0 0;
+  padding: 23px 5px 19px 0;
   list-style: none;
 
   border-top: 1px solid @line-header-grey;
@@ -8,8 +8,8 @@
 }
 
 .footer-links__item {
-  margin-right: 24px;
-  margin-bottom: 19px;
+  margin-right: 28px;
+  line-height: 0;
 
   &:last-child {
     margin-right: 0;
@@ -18,8 +18,6 @@
 
 .footer-links__link {
   display: block;
-  width: 28px;
-  height: 22px;
 
   &:hover .social-links__icon {
     fill: @green;
@@ -45,7 +43,7 @@
 
   text-align: center;
 
-  &:hover path {
+  &:hover .footer-links__logotype {
     fill: @logo-hover-grey;
   }
 
@@ -53,12 +51,12 @@
     outline: none;
   }
 
-  &:focus path,
-  &:focus-visible path {
+  &:focus .footer-links__logotype,
+  &:focus-visible .footer-links__logotype {
     fill: @logo-hover-grey;
   }
 
-  &:active path {
+  &:active .footer-links__logotype {
     fill: @logo-active-grey;
   }
 }
@@ -68,7 +66,7 @@
 }
 
 .footer-links__academy {
-  &:hover .academy-logotype__image path {
+  &:hover .academy-logotype__image {
     fill: @green;
   }
 
@@ -76,8 +74,8 @@
     outline: none;
   }
 
-  &:focus .academy-logotype__image path,
-  &:focus-visible .academy-logotype__image path {
+  &:focus .academy-logotype__image,
+  &:focus-visible .academy-logotype__image {
     fill: @green;
   }
 
@@ -95,7 +93,7 @@
 
   .footer-links__list {
     margin: 0;
-    padding-left: 35px;
+    padding: 5px 0 0 30px;
 
     border: none;
   }
