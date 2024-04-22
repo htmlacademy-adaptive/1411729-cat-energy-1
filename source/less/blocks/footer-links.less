@@ -1,6 +1,6 @@
-.footer-links__list  {
+.footer-links__list {
   margin: 0 0 20px;
-  padding: 20px 0 0;
+  padding: 23px 5px 19px 0;
   list-style: none;
 
   border-top: 1px solid @line-header-grey;
@@ -8,8 +8,8 @@
 }
 
 .footer-links__item {
-  margin-right: 24px;
-  margin-bottom: 19px;
+  margin-right: 28px;
+  line-height: 0;
 
   &:last-child {
     margin-right: 0;
@@ -18,11 +18,10 @@
 
 .footer-links__link {
   display: block;
-  width: 28px;
-  height: 22px;
+  color: @social-icon-grey;
 
   &:hover .social-links__icon {
-    fill: @green;
+    color: @green;
   }
 
   &:focus-visible {
@@ -31,7 +30,7 @@
 
   &:focus .social-links__icon,
   &:focus-visible .social-links__icon {
-    fill: @green;
+    color: @green;
   }
 
   &:active {
@@ -44,22 +43,23 @@
   margin-bottom: 16px;
 
   text-align: center;
+  color: @dark-grey;
 
-  &:hover path {
-    fill: @logo-hover-grey;
+  &:hover .footer-links__logotype {
+    color: @logo-hover-grey;
   }
 
   &:focus-visible {
     outline: none;
   }
 
-  &:focus path,
-  &:focus-visible path {
-    fill: @logo-hover-grey;
+  &:focus .footer-links__logotype,
+  &:focus-visible .footer-links__logotype {
+    color: @logo-hover-grey;
   }
 
-  &:active path {
-    fill: @logo-active-grey;
+  &:active .footer-links__logotype {
+    color: @logo-active-grey;
   }
 }
 
@@ -68,17 +68,17 @@
 }
 
 .footer-links__academy {
-  &:hover .academy-logotype__image path {
-    fill: @green;
+  &:hover .academy-logotype__image {
+    color: @green;
   }
 
   &:focus-visible {
     outline: none;
   }
 
-  &:focus .academy-logotype__image path,
-  &:focus-visible .academy-logotype__image path {
-    fill: @green;
+  &:focus .academy-logotype__image,
+  &:focus-visible .academy-logotype__image {
+    color: @green;
   }
 
   &:active {
@@ -90,12 +90,12 @@
   .footer-links {
     display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
   }
 
   .footer-links__list {
     margin: 0;
-    padding-left: 35px;
+    padding: 5px 0 0 30px;
 
     border: none;
   }
