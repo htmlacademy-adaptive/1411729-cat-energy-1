@@ -21,7 +21,14 @@
       <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
 
       <a class="site-header__logo logotype" href="index.html" title="Перейти на Главную страницу">
-        <img class="logotype__image" src="img/logo-catenergy-image.svg" width="33" height="38" alt="Логотип: кот в костюме супергероя.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-catenergy-image-desktop.svg">
+
+          <source media="(min-width: 768px)" srcset="img/logo-catenergy-image-tablet.svg">
+
+          <img class="logotype__image" src="img/logo-catenergy-image-mobile.svg" width="33" height="38" alt="Логотип: кот в костюме супергероя.">
+        </picture>
+
         <img class="logotype__text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
 
@@ -244,7 +251,7 @@
         <h2 class="visually-hidden">Ссылки магазина</h2>
 
         <a class="footer-links__index-link" href="index.html" title="Перейти на Главную страницу">
-          <svg class="footer-links__logotype" width="128" height="24" fill="#111111">
+          <svg class="footer-links__logotype" width="128" height="24">
             <use xlink:href="img/sprite.svg#shop-logo-text"></use>
           </svg>
         </a>
@@ -252,7 +259,7 @@
         <ul class="footer-links__list social-links">
           <li class="footer-links__item">
             <a class="footer-links__link" href="#" title="Наша группа в VK" aria-label="Наша группа в VK">
-              <svg class="social-links__icon" width="27" height="17" fill="#666666">
+              <svg class="social-links__icon" width="27" height="17">
                 <use xlink:href="img/sprite.svg#icon-vk-logo"></use>
               </svg>
 
@@ -262,7 +269,7 @@
 
           <li class="footer-links__item">
             <a class="footer-links__link" href="#" title="Наш канал на YouTube" aria-label="Наш канал на YouTube">
-              <svg class="social-links__icon" width="24" height="19" fill="#666666">
+              <svg class="social-links__icon" width="24" height="19">
                 <use xlink:href="img/sprite.svg#icon-youtube-logo"></use>
               </svg>
 
@@ -272,7 +279,7 @@
 
           <li class="footer-links__item">
             <a class="footer-links__link " href="#" title="Наш телеграм канал" aria-label="Наш телеграм канал">
-              <svg class="social-links__icon" width="20" height="17" fill="#666666">
+              <svg class="social-links__icon" width="20" height="17">
                 <use xlink:href="img/sprite.svg#icon-telegram-logo"></use>
               </svg>
 
@@ -284,7 +291,7 @@
         <a class="footer-links__academy academy-logotype" href="#" title="Перейти на сайт Академии">
           <span class="academy-logotype__text">HTML Academy</span>
 
-          <svg class="academy-logotype__image" width="27" height="34" fill="#666666">
+          <svg class="academy-logotype__image" width="27" height="34">
             <use xlink:href="img/sprite.svg#academy-logo"></use>
           </svg>
         </a>
