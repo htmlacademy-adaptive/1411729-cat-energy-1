@@ -18,12 +18,28 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+// Copy
+
+export const copy = (done) => {
+  gulp.src([
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
+    'source/*.webmanifest',
+    'source/*.html',
+    'source/js/*.js'
+  ], {
+    base: 'source'
+  })
+    .pipe(gulp.dest('build'))
+  done();
+}
+
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
