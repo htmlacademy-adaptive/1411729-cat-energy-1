@@ -5,6 +5,8 @@ import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import browser from 'browser-sync';
 
 // Styles
@@ -20,6 +22,18 @@ export const styles = () => {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+// SVG
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy
