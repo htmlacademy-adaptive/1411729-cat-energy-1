@@ -35,7 +35,9 @@ const html = () => {
 
 // Scripts
 const scripts = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/*.js', {
+    base: 'source'
+  })
     .pipe(gulp.dest('build'))
 }
 
@@ -69,7 +71,6 @@ const copy = (done) => {
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
-    'source/js/*.js'
   ], {
     base: 'source'
   })
