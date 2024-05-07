@@ -11,6 +11,7 @@ import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
 import { deleteAsync } from 'del';
 import htmlmin from 'gulp-htmlmin';
+import minify from 'gulp-minify';
 
 // Styles
 
@@ -40,6 +41,7 @@ const scripts = () => {
   return gulp.src('source/js/*.js', {
     base: 'source'
   })
+    .pipe(minify({noSource: true}))
     .pipe(gulp.dest('build'))
 }
 
