@@ -10,6 +10,8 @@ import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
 import { deleteAsync } from 'del';
+import htmlmin from 'gulp-htmlmin';
+import minify from 'gulp-minify';
 
 // Styles
 
@@ -30,6 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'))
 }
 
@@ -38,6 +41,7 @@ const scripts = () => {
   return gulp.src('source/js/*.js', {
     base: 'source'
   })
+    .pipe(minify({noSource: true}))
     .pipe(gulp.dest('build'))
 }
 
@@ -149,8 +153,8 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-    styles,
     html,
+    styles,
     scripts,
     svg,
     sprite,
@@ -165,8 +169,8 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    styles,
     html,
+    styles,
     scripts,
     svg,
     sprite,
