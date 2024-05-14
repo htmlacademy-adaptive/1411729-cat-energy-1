@@ -210,8 +210,37 @@
             <input class="control__separation-line" type="range" min="0" max="100" value="50" step="1" name="before-after-separator">
           </div>
 
-          <div class="slider__image slider__image--before"></div>
-          <div class="slider__image slider__image--after"></div>
+          <div class="slider__image slider__image--before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.webp 1x,
+                img/slider/cat-fat-tablet@2x.webp 2x" width="560" height="512">
+
+              <source type="image/webp" srcset="img/slider/cat-fat-mobile@1x.webp 1x,
+                img/slider/cat-fat-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.png 1x,
+                img/slider/cat-fat-tablet@2x.png 2x" width="560" height="512">
+
+              <img class="" src="img/slider/cat-fat-mobile@1x.png"
+                srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с избыточным весом.">
+            </picture>
+          </div>
+
+          <div class="slider__image slider__image--after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.webp 1x,
+                img/slider/cat-slim-tablet@2x.webp 2x" width="560" height="512">
+
+              <source type="image/webp" srcset="img/slider/cat-slim-mobile@1x.webp 1x,
+                img/slider/cat-slim-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.png 1x,
+                img/slider/cat-slim-tablet@2x.png 2x" width="560" height="512">
+
+              <img class="" src="img/slider/cat-slim-mobile@1x.png"
+                srcset="img/slider/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с избыточным весом.">
+            </picture>
+          </div>
         </div>
       </section>
     </main>
