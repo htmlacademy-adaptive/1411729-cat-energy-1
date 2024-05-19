@@ -15,9 +15,7 @@
   </head>
 
   <body class="page__body ">
-    <!--
-      Если JavaScript не работает, работает site-header--nojs
-    -->
+    <!-- Если JavaScript не работает, работает модификаторno nojs -->
     <header class="page__header page__header--index-style site-header site-header--nojs">
       <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
 
@@ -33,10 +31,7 @@
         <img class="logotype__text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
 
-      <!--
-        Чтобы открыть меню в мобильной версии,
-        добавь site-menu--opened вместо site-menu--closed
-      -->
+      <!-- Чтобы открыть меню в мобильной версии, добавь модификатор opened вместо closed -->
       <nav class="site-header__navigation site-menu site-menu--closed">
         <button class="site-menu__button" type="button">
           <span class="visually-hidden">Меню</span>
@@ -131,8 +126,10 @@
         </fieldset>
 
         <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--contact-info fields-group">
+          <legend class="visually-hidden">Контактные данные владельца кота</legend>
+
           <div class="fields-group__title-container fields-group__title-container--contact-info title-container">
-            <legend class="fields-group__title">Контактные данные&nbsp;<br>(владельца кота)</legend>
+            <div class="fields-group__title">Контактные данные&nbsp;<br>(владельца кота)</div>
             <div class="title-container__head-line"></div>
           </div>
 
@@ -158,8 +155,10 @@
         </fieldset>
 
         <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--comment-field fields-group inputs">
+          <legend class="visually-hidden">Информация о питомце в свобоной форме</legend>
+
           <div class="fields-group__title-container fields-group__title-container--comment-field title-container">
-            <legend class="fields-group__title">Комментарий</legend>
+            <div class="fields-group__title">Комментарий</div>
             <div class="title-container__head-line"></div>
           </div>
 
@@ -169,8 +168,10 @@
         </fieldset>
 
         <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--related-products fields-group field-related-products">
+          <legend class="visually-hidden">Дополнительные рекомендации</legend>
+
           <div class="fields-group__title-container fields-group__title-container--related-products title-container">
-            <legend class="fields-group__title">Дополнительно</legend>
+            <div class="fields-group__title">Дополнительно</div>
             <div class="title-container__head-line"></div>
           </div>
 
