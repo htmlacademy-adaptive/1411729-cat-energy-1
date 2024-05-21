@@ -1,6 +1,11 @@
-.fields-group {
-  padding-right: 20px;
-  padding-left: 20px;
+.fields-group__title-container {
+  &--contact-info {
+    margin-bottom: 35px;
+  }
+
+  &--related-products {
+    margin-bottom: 13px;
+  }
 }
 
 .fields-group__title {
@@ -35,23 +40,6 @@
   }
 }
 
-.fields-group__pet-data {
-  margin-bottom: 9px;
-}
-
-.fields-group__goals-field {
-  padding-top: 1px;
-}
-
-.fields-group__contact-info {
-  margin-bottom: 10px;
-  padding-top: 26px;
-}
-
-.fields-group__comment-field {
-  margin-bottom: 14px;
-}
-
 .fields-group__inputs {
   margin: 0 0 10px;
   padding: 0;
@@ -78,12 +66,23 @@
 
 @media (min-width: @tablet-width) {
   .fields-group {
-    padding-right: 70px;
-    padding-left: 70px;
-
     &__choice--with-border {
       padding: 22px 26px 25px;
       border: 1px solid @border-input-grey;
+    }
+  }
+
+  .fields-group__title-container {
+    &--contact-info {
+      margin-bottom: 77px;
+    }
+
+    &--comment-field {
+      margin-bottom: 87px;
+    }
+
+    &--related-products {
+      margin-bottom: 57px;
     }
   }
 
@@ -99,15 +98,6 @@
       right: -40px;
       width: 40px;
     }
-  }
-
-  .fields-group__pet-data {
-    margin-bottom: 64px;
-  }
-
-  .fields-group__contact-info {
-    margin-bottom: 58px;
-    padding-top: 0;
   }
 
   .fields-group__program-goals {
@@ -126,33 +116,23 @@
   .fields-group__comment {
     height: 148px;
   }
-
-  .fields-group__comment-field {
-    margin-bottom: 65px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .fields-group {
-    padding-right: 110px;
-    padding-left: 110px;
-
     &__choice--with-border {
       padding-top: 25px;
     }
   }
 
-  .fields-group__pet-data {
-    padding-right: 40px;
-  }
+  .fields-group__title-container {
+    &--contact-info {
+      margin-bottom: 75px;
+    }
 
-  .fields-group__goals-field {
-    padding-left: 40px;
-  }
-
-  .fields-group__contact-info {
-    margin-bottom: 63px;
-    grid-column: 1 / -1;
+    &--comment-field {
+      margin-bottom: 79px;
+    }
   }
 
   .fields-group__input-contacts {
@@ -161,10 +141,5 @@
     .inputs__item {
       margin-bottom: 0;
     }
-  }
-
-  .fields-group__comment-field {
-    margin-bottom: 70px;
-    grid-column: 1 / -1;
   }
 }

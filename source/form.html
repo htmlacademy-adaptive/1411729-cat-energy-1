@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Учебный проект HTML Academy «CAT ENERGY»">
 
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32">
     <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
@@ -14,9 +15,7 @@
   </head>
 
   <body class="page__body ">
-    <!--
-      Если JavaScript не работает, работает site-header--nojs
-    -->
+    <!-- Если JavaScript не работает, работает модификаторno nojs -->
     <header class="page__header page__header--index-style site-header site-header--nojs">
       <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
 
@@ -32,10 +31,7 @@
         <img class="logotype__text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
 
-      <!--
-        Чтобы открыть меню в мобильной версии,
-        добавь site-menu--opened вместо site-menu--closed
-      -->
+      <!-- Чтобы открыть меню в мобильной версии, добавь модификатор opened вместо closed -->
       <nav class="site-header__navigation site-menu site-menu--closed">
         <button class="site-menu__button" type="button">
           <span class="visually-hidden">Меню</span>
@@ -72,7 +68,7 @@
           программу питания для вашего кота
         </p>
 
-        <fieldset class="questionnaire-form__fieldset fields-group fields-group__pet-data">
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--pet-data fields-group">
           <legend class="visually-hidden">Основные данные питомца</legend>
 
           <ul class="fields-group__inputs inputs">
@@ -99,7 +95,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--with-border fields-group fields-group__goals-field">
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--goals-field questionnaire-form__fieldset--with-border fields-group">
           <legend class="visually-hidden">Цель программы</legend>
 
           <ul class="fields-group__choice fields-group__choice--with-border fields-group__program-goals choice">
@@ -129,9 +125,11 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset fields-group fields-group__contact-info field-contact-info">
-          <div class="fields-group__title-container title-container field-contact-info__title">
-            <legend class="fields-group__title">Контактные данные&nbsp;<br>(владельца кота)</legend>
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--contact-info fields-group">
+          <legend class="visually-hidden">Контактные данные владельца кота</legend>
+
+          <div class="fields-group__title-container fields-group__title-container--contact-info title-container">
+            <div class="fields-group__title">Контактные данные&nbsp;<br>(владельца кота)</div>
             <div class="title-container__head-line"></div>
           </div>
 
@@ -156,9 +154,11 @@
           </ul>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset fields-group fields-group__comment-field inputs">
-          <div class="fields-group__title-container title-container field-comment__title">
-            <legend class="fields-group__title">Комментарий</legend>
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--comment-field fields-group inputs">
+          <legend class="visually-hidden">Информация о питомце в свобоной форме</legend>
+
+          <div class="fields-group__title-container fields-group__title-container--comment-field title-container">
+            <div class="fields-group__title">Комментарий</div>
             <div class="title-container__head-line"></div>
           </div>
 
@@ -167,9 +167,11 @@
           </label>
         </fieldset>
 
-        <fieldset class="questionnaire-form__fieldset fields-group field-related-products field-related-products__container">
-          <div class="fields-group__title-container title-container field-related-products__title">
-            <legend class="fields-group__title">Дополнительно</legend>
+        <fieldset class="questionnaire-form__fieldset questionnaire-form__fieldset--related-products fields-group field-related-products">
+          <legend class="visually-hidden">Дополнительные рекомендации</legend>
+
+          <div class="fields-group__title-container fields-group__title-container--related-products title-container">
+            <div class="fields-group__title">Дополнительно</div>
             <div class="title-container__head-line"></div>
           </div>
 

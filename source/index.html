@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Учебный проект HTML Academy «CAT ENERGY»">
 
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32">
     <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
@@ -14,9 +15,7 @@
   </head>
 
   <body class="page__body">
-    <!--
-      Если JavaScript не работает, работает site-header--nojs
-    -->
+    <!-- Если JavaScript не работает, работает модификаторno nojs -->
     <header class="page__header page__header--index-style site-header site-header--nojs">
       <h1 class="visually-hidden">Интеренет магазин «CAT ENERGY»</h1>
 
@@ -32,10 +31,7 @@
         <img class="logotype__text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
 
-      <!--
-        Чтобы открыть меню в мобильной версии,
-        добавь site-menu--opened вместо site-menu--closed
-      -->
+      <!-- Чтобы открыть меню в мобильной версии, добавь модификатор opened вместо closed -->
       <nav class="site-header__navigation site-menu site-menu--closed">
         <button class="site-menu__button" type="button">
           <span class="visually-hidden">Меню</span>
@@ -76,8 +72,8 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-image/promo-cat-food-tablet.webp 1x,
                 img/promo-image/promo-cat-food-tablet@2x.webp 2x">
 
-              <source type="image/webp" srcset="img/promo-image/promo-cat-food-mobile.webp"
-                srcset="img/promo-image/promo-cat-food-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/promo-image/promo-cat-food-mobile.webp 1x,
+                img/promo-image/promo-cat-food-mobile@2x.webp 2x">
 
               <source media="(min-width: 1440px)" srcset="img/promo-image/promo-cat-food-desktop.png 1x,
                 img/promo-image/promo-cat-food-desktop@2x.png 2x">
@@ -189,13 +185,13 @@
 
         <dl class="story__data-list">
           <div class="story__data-item data-item">
-            <dd class="data-item__data">5 кг</dd>
             <dt class="data-item__title">Снижение веса</dt>
+            <dd class="data-item__data">5 кг</dd>
           </div>
 
           <div class="story__data-item data-item">
-            <dd class="data-item__data">60 дней</dd>
             <dt class="data-item__title">Затрачено времени</dt>
+            <dd class="data-item__data">60 дней</dd>
           </div>
 
           <div class="story__data-result data-result">
@@ -205,13 +201,51 @@
         </dl>
 
         <div class="story__slider slider">
-          <div class="slider__control control">
-            <button class="control__button" type="button"></button>
-            <input class="control__separation-line" type="range" min="0" max="100" value="50" step="1" name="before-after-separator">
-          </div>
+          <div class="slider__container">
+            <button class="slider__control slider__button" type="button">
+              <span class="visually-hidden">До похудения/После похудения</span>
 
-          <div class="slider__image slider__image--before"></div>
-          <div class="slider__image slider__image--after"></div>
+              <svg class="" width="24" height="18">
+                <use xlink:href="img/sprite.svg#slider-arrows"></use>
+              </svg>
+            </button>
+            <!-- <div class="slider__control control">
+              <button class="control__button" type="button"></button>
+              <input class="control__separation-line" type="range" min="0" max="100" value="50" step="1" name="before-after-separator">
+            </div> -->
+
+            <div class="slider__image-container slider__image-container--before">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.webp 1x,
+                  img/slider/cat-fat-tablet@2x.webp 2x" width="560" height="512">
+
+                <source type="image/webp" srcset="img/slider/cat-fat-mobile@1x.webp 1x,
+                  img/slider/cat-fat-mobile@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.png 1x,
+                  img/slider/cat-fat-tablet@2x.png 2x" width="560" height="512">
+
+                <img class="slider__image slider__image--before" src="img/slider/cat-fat-mobile@1x.png"
+                  srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с избыточным весом.">
+              </picture>
+            </div>
+
+            <div class="slider__image-container slider__image-container--after">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.webp 1x,
+                  img/slider/cat-slim-tablet@2x.webp 2x" width="560" height="512">
+
+                <source type="image/webp" srcset="img/slider/cat-slim-mobile@1x.webp 1x,
+                  img/slider/cat-slim-mobile@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.png 1x,
+                  img/slider/cat-slim-tablet@2x.png 2x" width="560" height="512">
+
+                <img class="slider__image slider__image--after" src="img/slider/cat-slim-mobile@1x.png"
+                  srcset="img/slider/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис похудел.">
+              </picture>
+            </div>
+          </div>
         </div>
       </section>
     </main>
