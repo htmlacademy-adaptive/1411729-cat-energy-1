@@ -201,41 +201,50 @@
         </dl>
 
         <div class="story__slider slider">
-          <div class="slider__control control">
-            <button class="control__button" type="button"></button>
-            <input class="control__separation-line" type="range" min="0" max="100" value="50" step="1" name="before-after-separator">
-          </div>
+          <div class="slider__container">
+            <button class="slider__control slider__button" type="button">
+              <span class="visually-hidden">До похудения/После похудения</span>
 
-          <div class="slider__image slider__image--before">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.webp 1x,
-                img/slider/cat-fat-tablet@2x.webp 2x" width="560" height="512">
+              <svg class="" width="24" height="18">
+                <use xlink:href="img/sprite.svg#slider-arrows"></use>
+              </svg>
+            </button>
+            <!-- <div class="slider__control control">
+              <button class="control__button" type="button"></button>
+              <input class="control__separation-line" type="range" min="0" max="100" value="50" step="1" name="before-after-separator">
+            </div> -->
 
-              <source type="image/webp" srcset="img/slider/cat-fat-mobile@1x.webp 1x,
-                img/slider/cat-fat-mobile@2x.webp 2x">
+            <div class="slider__image-container slider__image-container--before">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.webp 1x,
+                  img/slider/cat-fat-tablet@2x.webp 2x" width="560" height="512">
 
-              <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.png 1x,
-                img/slider/cat-fat-tablet@2x.png 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/slider/cat-fat-mobile@1x.webp 1x,
+                  img/slider/cat-fat-mobile@2x.webp 2x">
 
-              <img class="" src="img/slider/cat-fat-mobile@1x.png"
-                srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с избыточным весом.">
-            </picture>
-          </div>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-fat-mobile@2x.png 1x,
+                  img/slider/cat-fat-tablet@2x.png 2x" width="560" height="512">
 
-          <div class="slider__image slider__image--after">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.webp 1x,
-                img/slider/cat-slim-tablet@2x.webp 2x" width="560" height="512">
+                <img class="slider__image slider__image--before" src="img/slider/cat-fat-mobile@1x.png"
+                  srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с избыточным весом.">
+              </picture>
+            </div>
 
-              <source type="image/webp" srcset="img/slider/cat-slim-mobile@1x.webp 1x,
-                img/slider/cat-slim-mobile@2x.webp 2x">
+            <div class="slider__image-container slider__image-container--after">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.webp 1x,
+                  img/slider/cat-slim-tablet@2x.webp 2x" width="560" height="512">
 
-              <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.png 1x,
-                img/slider/cat-slim-tablet@2x.png 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/slider/cat-slim-mobile@1x.webp 1x,
+                  img/slider/cat-slim-mobile@2x.webp 2x">
 
-              <img class="" src="img/slider/cat-slim-mobile@1x.png"
-                srcset="img/slider/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с избыточным весом.">
-            </picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-slim-mobile@2x.png 1x,
+                  img/slider/cat-slim-tablet@2x.png 2x" width="560" height="512">
+
+                <img class="slider__image slider__image--after" src="img/slider/cat-slim-mobile@1x.png"
+                  srcset="img/slider/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис похудел.">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
