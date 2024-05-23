@@ -3,6 +3,9 @@
 }
 
 .site-header__logo {
+  min-width: 175px;
+
+  padding-right: 30px;
   margin-right: auto;
   transition: opacity linear 0.2s;
 
@@ -24,6 +27,12 @@
 .site-header__navigation {
   padding-right: 1px;
   padding-top: 2px;
+}
+
+@media (min-width: @desktop-width) {
+  .site-header__navigation {
+    width: 50%;
+  }
 }
 
 @media (max-width: @mobile-only) {
